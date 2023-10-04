@@ -1,0 +1,110 @@
+[{
+  "_id": {
+    "$oid": "6516ddeee1ff5361132b0a3d"
+  },
+  "description": "Escape to the lush jungles of Costa Rica and discover exotic wildlife. Stay in eco-friendly lodges, hike through rainforests, and relax on pristine beaches.",
+  "destination": "Costa Rica",
+  "imageName": "costa-rica_5500",
+  "startDate": "2023-10-15T00:00:00.000Z",
+  "endDate": "2023-10-30T00:00:00.000Z",
+  "price": 5500
+},
+{
+  "_id": {
+    "$oid": "6516ddeee1ff5361132b0a3e"
+  },
+  "description": "Experience the beauty of the Maldives, with overwater bungalows, clear blue waters, and vibrant coral reefs. Snorkel, dive, and unwind in luxury.",
+  "destination": "Maldives",
+  "imageName": "maldives_6800",
+  "startDate": "2023-11-10T00:00:00.000Z",
+  "endDate": "2023-11-25T00:00:00.000Z",
+  "price": 6800
+},
+{
+  "_id": {
+    "$oid": "6516ddeee1ff5361132b0a3f"
+  },
+  "description": "Savor the flavors of Thai cuisine and explore the culture of Bangkok. Visit temples, enjoy street food, and cruise along the Chao Phraya River.",
+  "destination": "Bangkok, Thailand",
+  "imageName": "bangkok_3500",
+  "startDate": "2023-12-05T00:00:00.000Z",
+  "endDate": "2023-12-20T00:00:00.000Z",
+  "price": 3500
+},
+{
+  "_id": {
+    "$oid": "6516ddeee1ff5361132b0a40"
+  },
+  "description": "Relax on the pristine beaches of Bali and immerse yourself in Balinese culture. Explore temples, enjoy water sports, and watch stunning sunsets.",
+  "destination": "Bali, Indonesia",
+  "imageName": "bali_4200",
+  "startDate": "2023-09-20T00:00:00.000Z",
+  "endDate": "2023-10-05T00:00:00.000Z",
+  "price": 4200
+},
+{
+  "_id": {
+    "$oid": "6516ddeee1ff5361132b0a41"
+  },
+  "description": "Escape to the serene Seychelles with its white sandy beaches and granite cliffs. Dive into turquoise waters and savor Creole cuisine.",
+  "destination": "Seychelles",
+  "imageName": "seychelles_3200",
+  "startDate": "2023-08-10T00:00:00.000Z",
+  "endDate": "2023-08-25T00:00:00.000Z",
+  "price": 3200
+},
+{
+  "_id": {
+    "$oid": "6516ddeee1ff5361132b0a42"
+  },
+  "description": "Discover the beauty of Fiji's islands, with coral reefs, palm-fringed beaches, and a warm tropical climate. Enjoy water adventures and island culture.",
+  "destination": "Fiji",
+  "imageName": "fiji_6000",
+  "startDate": "2023-10-25T00:00:00.000Z",
+  "endDate": "2023-11-10T00:00:00.000Z",
+  "price": 6000
+},
+{
+  "_id": {
+    "$oid": "6516ddeee1ff5361132b0a43"
+  },
+  "description": "Journey to the captivating beaches of Zanzibar, Tanzania. Dive into the Indian Ocean, explore Stone Town, and enjoy spicy island cuisine.",
+  "destination": "Zanzibar, Tanzania",
+  "imageName": "zanzibar_4500",
+  "startDate": "2023-11-15T00:00:00.000Z",
+  "endDate": "2023-11-30T00:00:00.000Z",
+  "price": 4500
+},
+{
+  "_id": {
+    "$oid": "6516ddeee1ff5361132b0a44"
+  },
+  "description": "Embark on a cultural exploration of Kyoto, Japan. Visit ancient temples, experience tea ceremonies, and witness cherry blossoms in spring.",
+  "destination": "Kyoto, Japan",
+  "imageName": "kyoto_7500",
+  "startDate": "2023-04-15T00:00:00.000Z",
+  "endDate": "2023-04-30T00:00:00.000Z",
+  "price": 7500
+},
+{
+  "_id": {
+    "$oid": "6516ddeee1ff5361132b0a45"
+  },
+  "description": "Sail through the turquoise waters of the Caribbean. Explore multiple islands, go snorkeling, and relax on beautiful sandy beaches.",
+  "destination": "Caribbean",
+  "imageName": "caribbean_4800",
+  "startDate": "2023-09-10T00:00:00.000Z",
+  "endDate": "2023-09-25T00:00:00.000Z",
+  "price": 4800
+},
+{
+  "_id": {
+    "$oid": "6516ddeee1ff5361132b0a46"
+  },
+  "description": "Experience the wonders of the Amazon Rainforest in Brazil. Trek through lush jungles, spot wildlife, and stay in eco-friendly lodges.",
+  "destination": "Amazon Rainforest, Brazil",
+  "imageName": "amazon_7200",
+  "startDate": "2023-08-25T00:00:00.000Z",
+  "endDate": "2023-09-09T00:00:00.000Z",
+  "price": 7200
+}]

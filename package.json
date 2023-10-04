@@ -1,0 +1,14 @@
+{
+  "name": "react-vacations",
+  "version": "1.0.0",
+  "description": "Final Portfolio Project for classes at John Bryce",
+  "scripts": {
+    "start": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}

@@ -1,0 +1,90 @@
+[
+    {
+        "firstName": "John",
+        "lastName": "Smith",
+        "email": "john.smith@example.com",
+        "password": "P@ssw0rd1",
+        "roleId": 1,
+        "vacationsFollowed": ["6516ddeee1ff5361132b0a3d", "6516ddeee1ff5361132b0a3e"]
+    },
+    {
+        "firstName": "Emily",
+        "lastName": "Johnson",
+        "email": "emily.j@example.com",
+        "password": "SecurePass2",
+        "roleId": 2,
+        "vacationsFollowed": ["6516ddeee1ff5361132b0a3f", "6516ddeee1ff5361132b0a40", "6516ddeee1ff5361132b0a41"]
+    },
+    {
+        "firstName": "Michael",
+        "lastName": "Brown",
+        "email": "michael.b@example.com",
+        "password": "StrongP@ss3",
+        "roleId": 1,
+        "vacationsFollowed": ["6516ddeee1ff5361132b0a42"]
+    },
+    {
+        "firstName": "Olivia",
+        "lastName": "Davis",
+        "email": "olivia.d@example.com",
+        "password": "SecretPass4",
+        "roleId": 2,
+        "vacationsFollowed": ["6516ddeee1ff5361132b0a43"]
+    },
+    {
+        "firstName": "Daniel",
+        "lastName": "Wilson",
+        "email": "daniel.w@example.com",
+        "password": "P@ssw0rd5",
+        "roleId": 1,
+        "vacationsFollowed": ["6516ddeee1ff5361132b0a44"]
+    },
+    {
+        "firstName": "Sophia",
+        "lastName": "Anderson",
+        "email": "sophia.a@example.com",
+        "password": "NewPass6",
+        "roleId": 2,
+        "vacationsFollowed": ["6516ddeee1ff5361132b0a45"]
+    },
+    {
+        "firstName": "William",
+        "lastName": "Jones",
+        "email": "william.j@example.com",
+        "password": "SecureP@ss7",
+        "roleId": 1,
+        "vacationsFollowed": ["6516ddeee1ff5361132b0a46"]
+    },
+    {
+        "firstName": "Emma",
+        "lastName": "Lee",
+        "email": "emma.l@example.com",
+        "password": "SecretP@ss8",
+        "roleId": 2,
+        "vacationsFollowed": ["6516ddeee1ff5361132b0a3d", "6516ddeee1ff5361132b0a3e", "6516ddeee1ff5361132b0a3f"]
+    },
+    {
+        "firstName": "Liam",
+        "lastName": "Harris",
+        "email": "liam.h@example.com",
+        "password": "StrongP@ss9",
+        "roleId": 1,
+        "vacationsFollowed": ["6516ddeee1ff5361132b0a40", "6516ddeee1ff5361132b0a41", "6516ddeee1ff5361132b0a42"]
+    },
+    {
+        "firstName": "Ava",
+        "lastName": "White",
+        "email": "ava.w@example.com",
+        "password": "P@ssw0rd10",
+        "roleId": 2,
+        "vacationsFollowed": ["6516ddeee1ff5361132b0a43", "6516ddeee1ff5361132b0a44", "6516ddeee1ff5361132b0a45"]
+    },
+    {
+        "firstName": "David",
+        "lastName": "Aviles",
+        "email": "admin@domain.com",
+        "password": "password",
+        "roleId": 2,
+        "vacationsFollowed": ["6516ddeee1ff5361132b0a43", "6516ddeee1ff5361132b0a44", "6516ddeee1ff5361132b0a45"]
+    }
+]
