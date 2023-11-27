@@ -7,6 +7,12 @@ import authService from "../../../Services/authService"
 import UserModel from "../../../Models/userModel"
 import notificationService from "../../../Services/notificationService"
 
+function FormErrorMessage(errorString: string) {
+    return (
+        <p className="text-indigo-600 text-sm pt-2 bg-white rounded-b-lg ring-1 ring-gray-300 px-2.5 py-1.5 ring-inset">{errorString}</p>
+    )
+}
+
 export default function RegisterForm(): JSX.Element {
 
     type FormInputs = {
@@ -14,7 +20,6 @@ export default function RegisterForm(): JSX.Element {
         lastName: string,
         email: string,
         password: string,
-        keepLoggedIn: boolean,
     }
 
     class FormOptions {
@@ -61,14 +66,14 @@ export default function RegisterForm(): JSX.Element {
                             <label className="block text-sm font-medium leading-6 text-gray-900">First Name</label>
                             <div className="mt-2">
                                 <input {...register("firstName", { required: FormOptions.firstName.required })} type="text" className="block w-full rounded-t-md border-0 px-2.5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                                <ErrorMessage errors={errors} name="firstName" render={({ message }) => <p className="text-indigo-600 text-sm pt-2 bg-white rounded-b-lg ring-1 ring-gray-300 px-2.5 py-1.5 ring-inset">{message}</p>} />
+                                <ErrorMessage errors={errors} name="firstName" render={({ message }) => FormErrorMessage(message)} />
                             </div>
                         </div>
                         <div>
                             <label className="block text-sm font-medium leading-6 text-gray-900">Last Name</label>
                             <div className="mt-2">
                                 <input {...register("lastName", { required: FormOptions.lastName.required })} type="text" className="block w-full rounded-t-md border-0 px-2.5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                                <ErrorMessage errors={errors} name="lastName" render={({ message }) => <p className="text-indigo-600 text-sm pt-2 bg-white rounded-b-lg ring-1 ring-gray-300 px-2.5 py-1.5 ring-inset">{message}</p>} />
+                                <ErrorMessage errors={errors} name="lastName" render={({ message }) => FormErrorMessage(message)} />
                             </div>
                         </div>
 
@@ -76,7 +81,7 @@ export default function RegisterForm(): JSX.Element {
                             <label className="block text-sm font-medium leading-6 text-gray-900">Email address</label>
                             <div className="mt-2">
                                 <input {...register("email", { required: FormOptions.email.required, pattern: FormOptions.email.pattern })} type="email" className="block w-full rounded-t-md border-0 px-2.5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
-                                <ErrorMessage errors={errors} name="email" render={({ message }) => <p className="text-indigo-600 text-sm pt-2 bg-white rounded-b-lg ring-1 ring-gray-300 px-2.5 py-1.5 ring-inset">{message}</p>} />
+                                <ErrorMessage errors={errors} name="email" render={({ message }) => FormErrorMessage(message)} />
                             </div>
                         </div>
 
@@ -86,7 +91,7 @@ export default function RegisterForm(): JSX.Element {
                             </div>
                             <div className="mt-2">
                                 <input {...register("password", { required: FormOptions.password.required, minLength: FormOptions.password.minLength })} type="password" className="block w-full rounded-t-md border-0 px-2.5 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                                <ErrorMessage errors={errors} name="password" render={({ message }) => <p className="text-indigo-600 text-sm pt-2 bg-white rounded-b-lg ring-1 ring-gray-300 px-2.5 py-1.5 ring-inset">{message}</p>} />
+                                <ErrorMessage errors={errors} name="password" render={({ message }) => FormErrorMessage(message)} />
                             </div>
                         </div>
 

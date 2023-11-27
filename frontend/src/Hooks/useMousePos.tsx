@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function useAuth() {
+export default function useMousePos() {
     const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
 
     useEffect(() => {

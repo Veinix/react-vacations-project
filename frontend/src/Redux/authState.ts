@@ -1,6 +1,7 @@
 import { createStore } from "redux";
 import jwtDecode from "jwt-decode";
 import UserModel from "../Models/userModel";
+import notificationService from "../Services/notificationService";
 
 export class AuthState {
     public token: string = null;
@@ -16,7 +17,8 @@ export class AuthState {
 export enum AuthActionType {
     Register = "Register",
     Login = "Login",
-    Logout = "Logout"
+    Logout = "Logout",
+    SessionExpired = "SessionExpired",
 }
 
 export interface AuthAction {
@@ -39,6 +41,12 @@ export function authReducer(currentState = new AuthState(), action: AuthAction):
             newState.token = null;
             newState.user = null;
             localStorage.removeItem("sessionToken");
+            break;
+        case AuthActionType.SessionExpired:
+            newState.token = null;
+            newState.user = null;
+            localStorage.removeItem("sessionToken");
+            notificationService.info("Your session has expired, please login again")
             break;
     }
 

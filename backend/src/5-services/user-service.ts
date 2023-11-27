@@ -1,3 +1,4 @@
+import { Types } from "mongoose";
 import { ResourceNotFoundError } from "../3-models/error-models";
 import UserModel, { IUserModel } from "../3-models/user-model";
 

@@ -8,7 +8,7 @@ interface IPrivateAdminRoutes {
 }
 
 function PrivateAdminRoutes({redirectPath, children}: IPrivateAdminRoutes) {
-    const [isAdmin] = useAdmin();
+    const isAdmin = useAdmin();
 
     if (isAdmin === undefined) {
         return <Loading message={"Just loading a couple things"}/>

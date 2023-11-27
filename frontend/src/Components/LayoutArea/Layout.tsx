@@ -10,8 +10,7 @@ import useMousePos from "../../Hooks/useMousePos"
 
 
 export default function Layout(): JSX.Element {
-
-    const [user] = useAuth();
+    const user = useAuth()
     const [mousePos] = useMousePos();
     
     return (
@@ -22,8 +21,8 @@ export default function Layout(): JSX.Element {
             <div className="w-full flex flex-col sm:flex-row flex-wrap sm:flex-nowrap py-4 flex-grow">
                 
                 <div className="w-fixed w-full flex-shrink flex-grow-0 px-4">
-                    <div className="sticky top-0 p-2 w-full h-full bg-[#FAF9F6]">
-                        <nav className="sticky top-0 p-2 border-2 border-solid border-black rounded-xl w-full h-full">
+                    <div className="sticky top-0 p-2 w-full h-full">
+                        <nav className="sticky top-0 p-2 border-2 border-solid border-black rounded-xl w-full h-full bg-[#FAF9F6]">
                             <Navbar user={user} />
                         </nav>
                     </div>
@@ -35,7 +34,7 @@ export default function Layout(): JSX.Element {
 
                 <div className="w-fixed w-full flex-shrink flex-grow-0 px-2">
                     <aside className="flex sm:flex-col px-2 ">
-                        <Aside />
+                        <Aside user={user} />
                     </aside>
                 </div>
 
@@ -46,7 +45,7 @@ export default function Layout(): JSX.Element {
             </footer>
 
             <div className="fixed top-6 left-14 sm:flex hidden flex-wrap w-full gap-32 mx-auto p-14 z-[-1] overflow-hidden">
-                {Array.from({ length: 105 }, (_, i) => {
+                {Array.from({ length: 100 }, (_, i) => {
                     return <Dot key={i} mousePos={mousePos}></Dot>
                 })}
             </div>

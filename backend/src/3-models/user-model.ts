@@ -1,4 +1,4 @@
-import { Document, Schema, model } from "mongoose";
+import { Document, Schema, model, Types } from "mongoose";
 
 export interface IUserModel extends Document {
     firstName: string;
@@ -6,7 +6,7 @@ export interface IUserModel extends Document {
     email: string;
     password: string;
     roleId: number;
-    vacationsFollowed: String[];
+    vacationsFollowed: Types.ObjectId[];
 }
 
 const UserSchema = new Schema<IUserModel>({
@@ -38,7 +38,7 @@ const UserSchema = new Schema<IUserModel>({
         required: [true, "Missing user role"]
     },
     vacationsFollowed: {
-        type: [],
+        type: [Types.ObjectId],
     }
 }, { versionKey: false, toJSON: { virtuals: true }, toObject: { virtuals: true } })
 

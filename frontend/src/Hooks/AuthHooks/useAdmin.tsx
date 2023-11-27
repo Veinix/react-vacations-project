@@ -8,7 +8,7 @@ export default function useAdmin() {
     useEffect(() => {
         const user = authStore.getState().user;
         user.roleId === RoleModel.Admin ? setIsAdmin(true) : setIsAdmin(false);
-    }, []);
+    }, [authStore.getState().user]);
 
-    return [isAdmin]
+    return isAdmin
 }

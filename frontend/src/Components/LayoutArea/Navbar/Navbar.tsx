@@ -8,20 +8,13 @@ interface INavBarProps {
     user: UserModel
 }
 
-function Navbar(props: INavBarProps): JSX.Element {
-    const user = props.user;
+function Navbar({ user }: INavBarProps): JSX.Element {
     return (
         <ul className="flex sm:flex-col overflow-hidden content-center justify-center">
-            {user && <li className="py-2 sm:py-4">
+            {user && <li className="py-2 sm:py-4 inline sm:hidden">
                 <NavLink to={`/account`} className={({ isActive }) => isActive? "active" : ""}>
                     <img src={accountImage} alt="Home" width="500" height="500" className="w-7 sm:mx-2 mx-4 inline" />
                     <span className="hidden sm:inline">{`${user.firstName}`}</span>
-                </NavLink>
-            </li>}
-            {!user && <li className="py-2 sm:py-4">
-                <NavLink to={`/login`} className={({ isActive }) => isActive? "active" : ""}>
-                    <img src={accountImage} alt="Home" width="500" height="500" className="w-7 sm:mx-2 mx-4 inline" />
-                    <span className="hidden sm:inline">Login</span>
                 </NavLink>
             </li>}
             <li className="py-2">

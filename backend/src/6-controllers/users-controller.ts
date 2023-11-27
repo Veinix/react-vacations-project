@@ -1,5 +1,6 @@
 import express, { NextFunction, Request, Response } from "express";
 import userService from "../5-services/user-service";
+import StatusCode from "../3-models/status-code";
 
 const router = express.Router();
 

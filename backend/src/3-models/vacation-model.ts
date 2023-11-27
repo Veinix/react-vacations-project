@@ -43,3 +43,4 @@ export const VacationSchema = new Schema<IVacationModel>({
 }, { versionKey: false, toJSON: { virtuals: true }, toObject: { virtuals: true } });
 
 export const VacationModel = model<IVacationModel>("VacationModel", VacationSchema, "vacations");
+

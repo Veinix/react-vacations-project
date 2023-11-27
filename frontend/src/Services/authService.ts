@@ -3,6 +3,9 @@ import appConfig from "../Utilities/appConfig";
 import UserModel from "../Models/userModel";
 import CredentialsModel from "../Models/credentialsModel";
 import { AuthAction, AuthActionType, authStore } from "../Redux/authState";
+import jwtDecode from "jwt-decode";
+import JwtToken from "../Models/jwtModels/jwtModel";
+import notificationService from "./notificationService";
 
 class AuthService {
 
@@ -23,6 +26,15 @@ class AuthService {
     public logout(): void {
         const action: AuthAction = { type: AuthActionType.Logout };
         authStore.dispatch(action);
+    }
+
+    public verifyToken(token: string): void {
+        const decodedToken: JwtToken = jwtDecode(token)
+        const hasExpired = new Date(decodedToken.exp * 1000) < new Date() ? true : false;
+        if (hasExpired) {
+            const action: AuthAction = { type: AuthActionType.SessionExpired };
+            authStore.dispatch(action)
+        }
     }
 
 }

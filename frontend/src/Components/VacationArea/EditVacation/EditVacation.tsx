@@ -51,7 +51,7 @@ function EditVacation() {
 
                 </div>
                 <div className="w-full sm:w-1/2 border-2 flex justify-center items-center border-black">
-                    <VacationCard vacationData={vacationData} isAdmin={false} followers={followers}/>
+                    <VacationCard vacationData={vacationData} isAdmin={false}/>
                 </div>
             </div>
         </>

@@ -63,48 +63,4 @@
   "startDate": "2023-10-25T00:00:00.000Z",
   "endDate": "2023-11-10T00:00:00.000Z",
   "price": 6000
-},
-{
-  "_id": {
-    "$oid": "6516ddeee1ff5361132b0a43"
-  },
-  "description": "Journey to the captivating beaches of Zanzibar, Tanzania. Dive into the Indian Ocean, explore Stone Town, and enjoy spicy island cuisine.",
-  "destination": "Zanzibar, Tanzania",
-  "imageName": "zanzibar_4500",
-  "startDate": "2023-11-15T00:00:00.000Z",
-  "endDate": "2023-11-30T00:00:00.000Z",
-  "price": 4500
-},
-{
-  "_id": {
-    "$oid": "6516ddeee1ff5361132b0a44"
-  },
-  "description": "Embark on a cultural exploration of Kyoto, Japan. Visit ancient temples, experience tea ceremonies, and witness cherry blossoms in spring.",
-  "destination": "Kyoto, Japan",
-  "imageName": "kyoto_7500",
-  "startDate": "2023-04-15T00:00:00.000Z",
-  "endDate": "2023-04-30T00:00:00.000Z",
-  "price": 7500
-},
-{
-  "_id": {
-    "$oid": "6516ddeee1ff5361132b0a45"
-  },
-  "description": "Sail through the turquoise waters of the Caribbean. Explore multiple islands, go snorkeling, and relax on beautiful sandy beaches.",
-  "destination": "Caribbean",
-  "imageName": "caribbean_4800",
-  "startDate": "2023-09-10T00:00:00.000Z",
-  "endDate": "2023-09-25T00:00:00.000Z",
-  "price": 4800
-},
-{
-  "_id": {
-    "$oid": "6516ddeee1ff5361132b0a46"
-  },
-  "description": "Experience the wonders of the Amazon Rainforest in Brazil. Trek through lush jungles, spot wildlife, and stay in eco-friendly lodges.",
-  "destination": "Amazon Rainforest, Brazil",
-  "imageName": "amazon_7200",
-  "startDate": "2023-08-25T00:00:00.000Z",
-  "endDate": "2023-09-09T00:00:00.000Z",
-  "price": 7200
 }]

@@ -1,90 +1,123 @@
 [
     {
+        "_id": {
+            "$oid": "651d2c99cf6b580ac14e6148"
+        },
         "firstName": "John",
         "lastName": "Smith",
         "email": "john.smith@example.com",
         "password": "P@ssw0rd1",
         "roleId": 1,
-        "vacationsFollowed": ["6516ddeee1ff5361132b0a3d", "6516ddeee1ff5361132b0a3e"]
+        "vacationsFollowed": []
     },
     {
+        "_id": {
+            "$oid": "651d2c99cf6b580ac14e6149"
+        },
         "firstName": "Emily",
         "lastName": "Johnson",
         "email": "emily.j@example.com",
         "password": "SecurePass2",
         "roleId": 2,
-        "vacationsFollowed": ["6516ddeee1ff5361132b0a3f", "6516ddeee1ff5361132b0a40", "6516ddeee1ff5361132b0a41"]
+        "vacationsFollowed": []
     },
     {
+        "_id": {
+            "$oid": "651d2c99cf6b580ac14e614a"
+        },
         "firstName": "Michael",
         "lastName": "Brown",
         "email": "michael.b@example.com",
         "password": "StrongP@ss3",
         "roleId": 1,
-        "vacationsFollowed": ["6516ddeee1ff5361132b0a42"]
+        "vacationsFollowed": []
     },
     {
+        "_id": {
+            "$oid": "651d2c99cf6b580ac14e614b"
+        },
         "firstName": "Olivia",
         "lastName": "Davis",
         "email": "olivia.d@example.com",
         "password": "SecretPass4",
         "roleId": 2,
-        "vacationsFollowed": ["6516ddeee1ff5361132b0a43"]
+        "vacationsFollowed": []
     },
     {
+        "_id": {
+            "$oid": "651d2c99cf6b580ac14e614c"
+        },
         "firstName": "Daniel",
         "lastName": "Wilson",
         "email": "daniel.w@example.com",
         "password": "P@ssw0rd5",
         "roleId": 1,
-        "vacationsFollowed": ["6516ddeee1ff5361132b0a44"]
+        "vacationsFollowed": []
     },
     {
+        "_id": {
+            "$oid": "651d2c99cf6b580ac14e614d"
+        },
         "firstName": "Sophia",
         "lastName": "Anderson",
         "email": "sophia.a@example.com",
         "password": "NewPass6",
         "roleId": 2,
-        "vacationsFollowed": ["6516ddeee1ff5361132b0a45"]
+        "vacationsFollowed": []
     },
     {
+        "_id": {
+            "$oid": "651d2c99cf6b580ac14e614e"
+        },
         "firstName": "William",
         "lastName": "Jones",
         "email": "william.j@example.com",
         "password": "SecureP@ss7",
         "roleId": 1,
-        "vacationsFollowed": ["6516ddeee1ff5361132b0a46"]
+        "vacationsFollowed": []
     },
     {
+        "_id": {
+            "$oid": "651d2c99cf6b580ac14e614f"
+        },
         "firstName": "Emma",
         "lastName": "Lee",
         "email": "emma.l@example.com",
         "password": "SecretP@ss8",
         "roleId": 2,
-        "vacationsFollowed": ["6516ddeee1ff5361132b0a3d", "6516ddeee1ff5361132b0a3e", "6516ddeee1ff5361132b0a3f"]
+        "vacationsFollowed": []
     },
     {
+        "_id": {
+            "$oid": "651d2c99cf6b580ac14e6150"
+        },
         "firstName": "Liam",
         "lastName": "Harris",
         "email": "liam.h@example.com",
         "password": "StrongP@ss9",
         "roleId": 1,
-        "vacationsFollowed": ["6516ddeee1ff5361132b0a40", "6516ddeee1ff5361132b0a41", "6516ddeee1ff5361132b0a42"]
+        "vacationsFollowed": []
     },
     {
+        "_id": {
+            "$oid": "651d2c99cf6b580ac14e6151"
+        },
         "firstName": "Ava",
         "lastName": "White",
         "email": "ava.w@example.com",
         "password": "P@ssw0rd10",
         "roleId": 2,
-        "vacationsFollowed": ["6516ddeee1ff5361132b0a43", "6516ddeee1ff5361132b0a44", "6516ddeee1ff5361132b0a45"]
+        "vacationsFollowed": []
     },
     {
+        "_id": {
+            "$oid": "651d2c99cf6b580ac14e6152"
+        },
         "firstName": "David",
         "lastName": "Aviles",
         "email": "admin@domain.com",
         "password": "password",
         "roleId": 2,
-        "vacationsFollowed": ["6516ddeee1ff5361132b0a43", "6516ddeee1ff5361132b0a44", "6516ddeee1ff5361132b0a45"]
+        "vacationsFollowed": []
     }
 ]

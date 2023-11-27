@@ -5,11 +5,11 @@ import { VacationsAction, VacationsActionType, vacationStore } from "../Redux/va
 
 class VacationService {
 
-    public async getAllVacations(): Promise<VacationModel[]> {
+    public async readAllVacations(): Promise<VacationModel[]> {
         let vacations = vacationStore.getState().vacations;
 
         if (vacations.length === 0) {
-
+            
             const response = await axios.get<VacationModel[]>(appConfig.vacationsEndpoint);
             vacations = response.data
 
@@ -20,7 +20,7 @@ class VacationService {
         return vacations;
     }
 
-    public async getSingleVacation(_id: string): Promise<VacationModel> {
+    public async readSingleVacation(_id: string): Promise<VacationModel> {
         const vacations = vacationStore.getState().vacations;
         let singleVacation = vacations.find(p => p._id === _id);
 
@@ -32,9 +32,9 @@ class VacationService {
         return singleVacation
     }
 
-    
 
-    public async addVacation(vacation: VacationModel): Promise<void> {
+
+    public async createVacation(vacation: VacationModel): Promise<void> {
         const options = {
             headers: { "Content-Type": "multipart/form-data" }
         }
@@ -47,7 +47,7 @@ class VacationService {
     }
 
 
-    public async editVacation(vacation: VacationModel): Promise<void> {
+    public async updateVacation(vacation: VacationModel): Promise<void> {
         const options = {
             headers: { "Content-Type": "multipart/form-data" }
         }
@@ -66,19 +66,18 @@ class VacationService {
         vacationStore.dispatch(action);
     }
 
-    public async getAmountOfFollowers(_id: string): Promise<number> {
+    public async readVacationFollowers(_id: string): Promise<number> {
         const response = await axios.get<number>(appConfig.vacationsEndpoint + "followers/" + _id)
         const followers = response.data
         return followers
     }
 
-    public async addFollower() {
-        
+    public async updateUsersFollowedVacations(vacationId: string) {
+        const response = await axios.put(appConfig.vacationsEndpoint + vacationId)
+        const data = response.data
+        return data;
     }
 
-    public async removeFollower() {
-        
-    }
 }
 
 const vacationsService = new VacationService();

@@ -9,7 +9,7 @@ class AppConfig {
 
     // Service Endpoints
     public readonly vacationsEndpoint = "http://localhost:4000/api/vacations/"
-    
+    public readonly usersEndpoint ="http://localhost:4000/api/users/"
 }
 
 const appConfig = new AppConfig();

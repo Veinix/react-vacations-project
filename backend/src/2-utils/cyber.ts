@@ -6,15 +6,15 @@ import appConfig from "./app-config";
 
 const tokenSecretKey = appConfig.tokenKey
 
-function getNewToken(user): string {
+function getNewToken(user: IUserModel): string {
     const payload = user.toJSON()
     const container = { user: payload }
-    const options = { expiresIn: "3h" };
+    const options = { expiresIn: "7h" };
     const token = jwt.sign(container, tokenSecretKey, options);
     return token;
 }
 
-function verifyToken(token: string): void {
+function verifyToken(token: string): void{
     if (!token) throw new UnauthorizedError("Missing JWT token.");
 
     try {
@@ -30,8 +30,9 @@ function verifyAdmin(token: string): void {
 
     const payload = jwt.verify(token, tokenSecretKey) as { user: IUserModel };
     const user = payload.user;
+    console.log(payload)
 
-    if(user.roleId !== RoleModel.Admin) throw new ForbiddenError("You are not an admin");
+    if (user.roleId !== RoleModel.Admin) throw new ForbiddenError("You are not an admin");
 }
 
 export default {
